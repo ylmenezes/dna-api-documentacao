@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,700;0,800;0,900;1,700&display=swap');
+
+body {
+    font-family: 'Raleway';
+    font-size: 13pt;
+    color: #404040;
+}
+
+.row{
+    margin-left:0px;
+    margin-right:0px;
+}
+
+#wrapper {
+    transition: all .4s ease 0s;
+    height: 100%;
+}
+
+#page-content-wrapper {
+    margin-top: 50px;
+    margin-left: 0;
+    /* width: 100%; */
+    height: auto;
+}
+
+#wrapper.active {
+    /* padding-left: 100px; */
+}
+#wrapper.active #sidebar-wrapper {
+    left: 150px;
+}
+
+#main_icon
+{
+    float:right;
+   padding-right: 65px;
+   padding-top:20px;
+}
+.sub_icon
+{
+    float:right;
+   padding-right: 65px;
+   padding-top:10px;
+}
+.content-header {
+  height: 65px;
+  line-height: 65px;
+}
+
+.content-header h1 {
+  margin: 0;
+  margin-left: 20px;
+  line-height: 65px;
+  display: inline-block;
+}
+
+@media (max-width:767px) {
+    #wrapper {
+        /* padding-left: 70px; */
+        transition: all .4s ease 0s;
+    }
+    #sidebar-wrapper {
+        left: 70px;
+    }
+    #wrapper.active {
+        /* padding-left: 150px; */
+    }
+    #page-content-wrapper .row div{
+        margin-left: unset;
+    }
+    #wrapper.active #sidebar-wrapper {
+        left: 150px;
+        width: 150px;
+        transition: all .4s ease 0s;
+    }
+}
+
+#page-content-wrapper {
+    /* width: 95%; */
+}
+
+#page-content-wrapper h1, h2, h3{
+    text-transform: capitalize;
+    font-size: 20pt;
+    font-weight: 700;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+#page-content-wrapper h4{
+    text-transform: capitalize;
+    font-size: 14pt;
+    font-weight: 700;
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+#page-content-wrapper .row div{
+    margin-left: 20px;
+
+}
+#page-content-wrapper .row div p{
+    margin-left: 15px;
+}
+
+#page-content-wrapper .table {
+    width: auto !important;
+}
+
+#page-content-wrapper .code {
+    background-color: #404040;
+    width: 50%;
+    font-size: 14pt;
+    font-weight: 400;
+}
+
+#page-content-wrapper .code code{
+    white-space: pre;
+    color: #fff;
+}
+
+#page-content-wrapper .code code span{
+    color: #a0d468;
+    font-size: 10pt;
+}
+
